@@ -4,8 +4,14 @@ Overall Look and Feel of UOboost
 
 
 Colours
-========
+=========
+We decided to go with the uOttawa official colours (https://www.uottawa.ca/about-us/administration-services/brand)
 
+Primary Garnet - HEX #8f001a
+Charcoal Grey - HEX #2d2d2c
+Polar Grey - HEX #f2f2f2
+Primary Warm Grey - HEX #80746c
+Primary Blue - HEX #636d77
 
 Iconography
 ===========
