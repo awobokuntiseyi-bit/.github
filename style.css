@@ -35,7 +35,7 @@ a { color: inherit; }
 .hero { position: relative; overflow: hidden; padding: 120px 24px 130px; text-align: center; background: linear-gradient(180deg, #fff, var(--smoke)); }
 .hero svg { position: absolute; pointer-events: none; }
 .hero .swoosh { top: 0; left: 0; width: min(42vw, 520px); }
-.hero .network { bottom: 10; right: 0; width: min(38vw, 480px); }
+.hero .network { bottom: 0; right: 0; width: min(38vw, 480px); }
 .hero .streaks { top: 26px; right: 5vw; width: min(24vw, 290px); }
 .hero-inner { position: relative; z-index: 2; max-width: 720px; margin: 0 auto; }
 .eyebrow { margin: 0 0 12px; color: var(--burgundy); font-size: .75rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
@@ -83,81 +83,79 @@ footer { padding: 40px 24px; background: var(--graphite); color: rgba(255,255,25
 footer strong { display: block; margin-bottom: 4px; color: #fff; font: 800 1.2rem "Montserrat", sans-serif; }
 
 
-/* 
+/*
 =========================================
 Home Page styling (#home-page)
-========================================= 
+=========================================
 */
-#home-page
-.num { display: grid; place-items: center; width: 40px; height: 40px; margin-bottom: 14px; border-radius: 50%; background: var(--burgundy); color: #fff; font: 800 1rem "Montserrat", sans-serif; }
-.uO {color: var(--burgundy);}  
+#home-page .num { display: grid; place-items: center; width: 40px; height: 40px; margin-bottom: 14px; border-radius: 50%; background: var(--burgundy); color: #fff; font: 800 1rem "Montserrat", sans-serif; }
 
 
-/* 
+/*
 =========================================
 Product Features Page styling (#features-page)
-========================================= 
+=========================================
 */
-#features-page
-.ticks { margin: 14px 0 0; padding: 0; list-style: none; }
-.ticks li { position: relative; margin-bottom: 6px; padding-left: 24px; }
-.ticks li::before { content: "✓"; position: absolute; left: 0; color: var(--burgundy); font-weight: 700; }
-.card::after { content: ""; position: absolute; right: -64px; top: -64px; width: 150px; height: 150px; border: 16px solid var(--burgundy-tint); border-radius: 50%; }
-.card  * { position: relative; z-index: 1; }
+#features-page .ticks { margin: 14px 0 0; padding: 0; list-style: none; }
+#features-page .ticks li { position: relative; margin-bottom: 6px; padding-left: 24px; }
+#features-page .ticks li::before { content: "✓"; position: absolute; left: 0; color: var(--burgundy); font-weight: 700; }
+#features-page .card::after { content: ""; position: absolute; right: -64px; top: -64px; width: 150px; height: 150px; border: 16px solid var(--burgundy-tint); border-radius: 50%; }
+#features-page .card > * { position: relative; z-index: 1; }
 
 
-/* 
+/*
 =========================================
 Pricing Page styling (#pricing-page)
-========================================= 
+=========================================
 */
-#pricing-page
-.free { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; background: var(--burgundy-tint); border-color: var(--burgundy-tint); box-shadow: none; }
-.free h3 { margin-bottom: 4px; }
+#pricing-page .free { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; background: var(--burgundy-tint); border-color: var(--burgundy-tint); box-shadow: none; }
+#pricing-page .free h3 { margin-bottom: 4px; }
 
-.tier { text-align: center; }
-.stars { color: var(--burgundy); letter-spacing: 2px; }
-.price { margin: 10px 0 0; font: 800 2.4rem "Montserrat", sans-serif; }
-.per { color: var(--slate); font-size: .9rem; }
-.desc { margin-top: 12px ; color: var(--slate); font-size: .9rem; }
-.tier.featured { color: #fff; border-color: transparent; background: linear-gradient(150deg, var(--burgundy-dark), var(--burgundy)); box-shadow: 0 16px 34px rgba(127,20,38,.28); }
-.tier.featured h3, .tier.featured .stars, .tier.featured .per, .tier.featured .desc { color: #fff; }
-.badge { display: inline-block; margin-bottom: 10px; padding: 3px 10px; border-radius: 999px; background: #fff; color: var(--burgundy); font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+#pricing-page .tier { text-align: center; }
+#pricing-page .stars { color: var(--burgundy); letter-spacing: 2px; }
+#pricing-page .price { margin: 10px 0 0; font: 800 2.4rem "Montserrat", sans-serif; }
+#pricing-page .per { color: var(--slate); font-size: .9rem; }
+#pricing-page .tier .desc { margin-top: 12px; color: var(--slate); font-size: .9rem; }
+#pricing-page .tier.featured { color: #fff; border-color: transparent; background: linear-gradient(150deg, var(--burgundy-dark), var(--burgundy)); box-shadow: 0 16px 34px rgba(127,20,38,.28); }
+#pricing-page .tier.featured h3, #pricing-page .tier.featured .stars, #pricing-page .tier.featured .per, #pricing-page .tier.featured .desc { color: #fff; }
+#pricing-page .badge { display: inline-block; margin-bottom: 10px; padding: 3px 10px; border-radius: 999px; background: #fff; color: var(--burgundy); font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 
-.tutor { display: flex; flex-direction: column; }
-.tutor-top { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
-.tutor-top h3 { margin: 0; }
-#pricing-page.portrait { flex: none; display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; color: #fff; font: 800 1.1rem "Montserrat", sans-serif; background: linear-gradient(140deg, var(--burgundy), var(--grey)); }
-.tutor:nth-child(even) .portrait { background: linear-gradient(140deg, var(--graphite), var(--slate)); }
-.meta { color: var(--slate); font-size: .9rem; }
-.rate { margin-top: auto ; font: 800 1.5rem "Montserrat", sans-serif; }
-.rate span { color: var(--slate); font: 400 .9rem "IBM Plex Sans", sans-serif; }
-.tutor .btn { text-align: center; }
+#pricing-page .tutor { display: flex; flex-direction: column; }
+#pricing-page .tutor-top { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+#pricing-page .tutor-top h3 { margin: 0; }
+#pricing-page .portrait { flex: none; display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; color: #fff; font: 800 1.1rem "Montserrat", sans-serif; background: linear-gradient(140deg, var(--burgundy), var(--grey)); }
+#pricing-page .tutor:nth-child(even) .portrait { background: linear-gradient(140deg, var(--graphite), var(--slate)); }
+#pricing-page .meta { color: var(--slate); font-size: .9rem; }
+#pricing-page .tutor .rate { margin-top: auto; font: 800 1.5rem "Montserrat", sans-serif; }
+#pricing-page .rate span { color: var(--slate); font: 400 .9rem "IBM Plex Sans", sans-serif; }
+#pricing-page .tutor .btn { text-align: center; }
 
-.faq { max-width: 760px; margin: 0 auto; }
-.faq details { margin-bottom: 10px; padding: 16px 20px; background: #fff; border: 1px solid var(--line); border-radius: 14px; }
-.faq summary { cursor: pointer; font-weight: 600; }
-.faq details p { margin: 10px 0 0; color: var(--slate); }
+#pricing-page .faq { max-width: 760px; margin: 0 auto; }
+#pricing-page .faq details { margin-bottom: 10px; padding: 16px 20px; background: #fff; border: 1px solid var(--line); border-radius: 14px; }
+#pricing-page .faq summary { cursor: pointer; font-weight: 600; }
+#pricing-page .faq details p { margin: 10px 0 0; color: var(--slate); }
 
 
-/* 
+/*
 =========================================
 Team Page styling (#team-page)
-========================================= 
+=========================================
 */
-#team-page
-.team { display: grid; gap: 20px; max-width: 1050px; margin: 0 auto; padding: 70px 24px; }
-.person { position: relative; overflow: hidden; display: flex; gap: 36px; align-items: center; padding: 28px; background: #fff; border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 6px 20px rgba(45,45,44,.06); }
-.person::after { content: ""; position: absolute; right: -64px; top: -64px; width: 170px; height: 170px; border: 18px solid var(--burgundy-tint); border-radius: 50%; }
+#team-page .team { display: grid; gap: 20px; max-width: 1050px; margin: 0 auto; padding: 70px 24px; }
+#team-page .person { position: relative; overflow: hidden; display: flex; gap: 36px; align-items: center; padding: 28px; background: #fff; border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 6px 20px rgba(45,45,44,.06); }
+#team-page .person::after { content: ""; position: absolute; right: -64px; top: -64px; width: 170px; height: 170px; border: 18px solid var(--burgundy-tint); border-radius: 50%; opacity: .45; z-index: 0; }
+#team-page .person > * { position: relative; z-index: 1; }  /* keeps the text and photo in front of the ring */
 #team-page .portrait { flex: none; display: grid; place-items: center; width: 150px; height: 150px; border-radius: 50%; color: #fff; font: 800 2.6rem "Montserrat", sans-serif;
   background: linear-gradient(140deg, var(--burgundy), var(--grey)); box-shadow: 0 0 0 6px var(--smoke), 0 0 0 7px var(--line); }
-.person:nth-child(even) .portrait { background: linear-gradient(140deg, var(--graphite), var(--slate)); }
-.person h2 { margin: 0 0 10px; color: var(--burgundy); font: 700 1.9rem "Montserrat", sans-serif; }
-.person p { margin: 0 0 14px; }
-.socials { display: flex; align-items: center; gap: 8px; }
-.socials a { display: inline-flex; color: var(--graphite); font: 800 1rem Arial, sans-serif; text-decoration: none; }
-.socials a:hover { color: var(--burgundy); }
-.socials span { color: var(--line); }
+#team-page .portrait img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }  /* team photos fill the circle */
+#team-page .person:nth-child(even) .portrait { background: linear-gradient(140deg, var(--graphite), var(--slate)); }
+#team-page .person h2 { margin: 0 0 10px; color: var(--burgundy); font: 700 1.9rem "Montserrat", sans-serif; }
+#team-page .person p { margin: 0 0 14px; }
+#team-page .socials { display: flex; align-items: center; gap: 8px; }
+#team-page .socials a { display: inline-flex; color: var(--graphite); font: 800 1rem Arial, sans-serif; text-decoration: none; }
+#team-page .socials a:hover { color: var(--burgundy); }
+#team-page .socials span { color: var(--line); }
+
 
 @media (max-width: 950px) {
   .cols-3, .cols-4 { grid-template-columns: repeat(2, 1fr); }
@@ -173,9 +171,9 @@ Team Page styling (#team-page)
   .hero .network { width: 58vw; }
   .cols-2, .cols-3, .cols-4 { grid-template-columns: 1fr; }
   .section { padding: 50px 16px; }
-  .free { flex-direction: column; align-items: flex-start; }
-  .person { flex-direction: column; text-align: center; gap: 16px; }
+  #pricing-page .free { flex-direction: column; align-items: flex-start; }
+  #team-page .person { flex-direction: column; text-align: center; gap: 16px; }
   #team-page .portrait { width: 120px; height: 120px; font-size: 2.1rem; }
-  .socials { justify-content: center; }
-  .person::after { display: none; }
+  #team-page .socials { justify-content: center; }
+  #team-page .person::after { display: none; }
 }
